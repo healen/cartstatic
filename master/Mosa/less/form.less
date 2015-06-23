@@ -1,0 +1,97 @@
+@import "../variables";
+@import "../lib/basic";
+@import '../button';
+@import "../document";
+
+/*商品列表*/
+
+.formbox{
+    width: 280px;
+    margin:30px auto;
+    font-size: 14px;
+
+    a{
+        color: @keyColor;
+    }
+
+}
+h1{
+    font-size: @bigFontSize;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin:10px 0px;
+}
+p{
+        &.nousername{
+            display: block;
+            padding-bottom: 24px;
+            text-align: center;
+
+        }
+}
+
+.form-sty{
+    label{
+        display: block;
+    }
+    font-size: @titleFoutSize;
+    p{
+        line-height: 16px;
+        span{color: #ff0000; padding-left: 5px};
+        color: @minorTextColor;
+        margin-bottom: 5px;
+        padding-left: 2px;
+
+    }
+    input.textbox{
+        display: block;
+        height: 40px;
+        width: 268px;
+        padding:0px 5px;
+        border:1px solid @borderColor;
+        &:focus{
+            border-color: @keyColor;
+
+        }
+    }
+    .alert{
+        height: 16px;
+        line-height: 16px;
+        color: #ff0000;
+        font-size: 12px;
+    }
+    .inputbox{
+        ._clearfix();
+        .left{
+            ._clearfix();
+            input{
+                float: left;
+                margin-top: 7px;
+                margin-right: 4px;
+            }
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    }
+}
+
+.btnbox{
+   
+    ._btnbox(7px 0px,@loginBtnColor);
+    input{
+        margin-top: 16px;
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+.tk{
+    text-align: center;
+}
+
+
+

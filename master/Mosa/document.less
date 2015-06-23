@@ -1,0 +1,90 @@
+._hide_phone(){
+	.hide_phone{
+		background: @listTopBarColor;
+		.txtScroll-left{
+			color: #fff;
+			margin: 0 auto;
+			width: 560px;
+			height: 60px;
+			position: relative;
+			 .hd{
+				margin: 0;
+				padding-top: 3px;
+				.prev,.next{
+					background-color: #36424b;
+				    color: #fff;
+				    display: block;
+				    font-size: 20px;
+				    opacity: .7;
+				    padding: 10px 0;
+				    position: absolute;
+				    width: 45px;
+				    text-align: center;
+				    z-index: 10;
+				    -webkit-transition: all ease-in-out .2s;
+				    -moz-transition: all ease-in-out .2s;
+				    -o-transition: all ease-in-out .2s;
+				    transition: all ease-in-out .2s;
+				    &:hover{
+				    	opacity: 1;
+				    }
+				}
+				
+				.prev {
+					left: 0;
+					text-align: center;
+				}
+				.next{
+					right: 0;
+					text-align: center;
+				}
+			}
+			.bd{
+				height: 60px;
+				position: relative;
+				width: 560px;
+				.tempWrap{
+					height: 60px;
+
+				}
+				ul{
+					left: 0;
+					margin: 0;
+					position: absolute;
+					width: 1120px;
+					top: 10px;
+					z-index: 5;
+					li{
+						font-size: 15px;
+						line-height: 1.25em;
+						float: left;
+						text-align: center;
+						width: 560px;
+						a{
+							color: #fff;
+							font-size: 14px;
+							float: none;
+							opacity: .8;
+							-webkit-transition: all ease-in-out .2s;
+							-moz-transition: all ease-in-out .2s;
+							-o-transition: all ease-in-out .2s;
+							transition: all ease-in-out .2s;
+							
+						}
+						span {
+							color: white;
+							display: block;
+							font-family: "ProximaNova-Regular";
+							font-size: 11px;
+							text-transform: none;
+						}
+					}
+
+				}
+			}
+		}
+
+
+		
+	}
+}

@@ -1,0 +1,27 @@
+@import "document";
+@import "variables";
+._btnbox(@padding:10px 40px,@mainColor:@markColor,@moColor:rgba(255,255,255,0.5)){
+    a,input{
+        display: block;
+        padding: @padding;
+        background: @mainColor;
+        border:2px solid darken(@mainColor, 10%);
+        display: inline-block;
+        color: #fff;
+        font-size: @navFoutSize;
+        letter-spacing: 2px;
+        border-radius: 3px;
+        &:hover{
+            background: darken(@mainColor,10%);
+        }
+
+        &.mo{
+            background: none;
+            margin-left: 15px;
+            border-color: @moColor;
+            &:hover{
+                 border-color: rgba(255,255,255,1);
+            }
+        }
+    }
+}

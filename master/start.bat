@@ -1,0 +1,1 @@
+http-server -p 8888 -a 192.168.1.112 --cors
